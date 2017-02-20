@@ -1,17 +1,11 @@
-const playlist = [(artistName,songTitle)]
+const playlist = {'Bobbie Gentry': 'Fancy','Neil Young': 'Old Man'};
 
+ function updatePlaylist(playlist, artist, song) {
+   playlist[artist] = song;
+   return playlist;
+ }
 
-function updatePlaylist = (name) {
-
-  updatePlaylist.artistName.push(name),
-  updatePlaylist.songTitle.push(name),
-}
-return updatePlaylist
-
-
-function removeFromPlaylist = (name) {
-
-  removeFromPlaylist.artistName.pop(name),
-  removeFromPlaylist.songTitle.pop(name),
-}
-return removeFromPlaylist
+ function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist];
+  return playlist;
+ }
