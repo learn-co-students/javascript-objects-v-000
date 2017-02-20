@@ -1,6 +1,6 @@
 var playlist = {
-  'Beyonce': "Drunk in Love",
-  'Damien Rice': "I Don't Want to Change You"
+  Beyonce: "Drunk in Love",   // Do NOT need single quotes for one-word key
+  'Damien Rice': "I Don't Want to Change You"   // DO need single quotes for multiple-word key
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
