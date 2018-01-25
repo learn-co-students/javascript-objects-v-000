@@ -1,11 +1,9 @@
-var playlist = new Object({biggie: 'hypnotize', tupac: 'california love'})
+let playlist = {
+  biggie: 'party and bullsh*t',
+  red_hot_chili_peppers: 'scar tissue',
+  black_sabbath: 'sabbath, bloody sabbath'
+};
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
-  return playlist;
-}
+const updatePlaylist = (playlist, artistName, songTitle) => playlist[artistName] = songTitle
 
-function removeFromPlaylist(playlist, artistName) {
-  delete playlist[artistName];
-  return playlist;
-}
+const removeFromPlaylist = (playlist, artistName) => delete playlist[artistName]
